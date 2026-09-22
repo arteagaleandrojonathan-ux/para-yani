@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Para ti · Un pequeño universo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="passwordScreen" class="password-screen">
+    <div class="password-box">
+        <p class="eyebrow">UN PEQUEÑO SECRETO</p>
+
+        <h1>Antes de entrar...</h1>
+
+        <p class="password-description">
+            Hay una pequeña clave para poder continuar.
+        </p>
+
+        <input 
+            type="password" 
+            id="passwordInput" 
+            placeholder="Escribe la contraseña"
+            autocomplete="off"
+        >
+
+        <button id="passwordBtn" class="gold-btn">
+            entrar ✦
+        </button>
+
+        <p id="passwordError" class="password-error">
+            Contraseña incorrecta.
+        </p>
+    </div>
+</div>
+<main id="app">
+<div class="grain"></div><div class="vignette"></div>
+
+<header class="topbar">
+  <span>para ti ✦</span>
+  <button id="musicBtn" class="music-btn">• música</button>
+</header>
+
+<section id="intro" class="screen active">
+  <div class="intro-flower" id="introFlower" aria-label="Presióname">
+    <div class="flower-glow"></div><div class="flower-core"></div>
+    <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span>
+    <span class="petal p4"></span><span class="petal p5"></span><span class="petal p6"></span>
+  </div>
+  <p class="eyebrow">UN PEQUEÑO UNIVERSO</p>
+  <h1 id="introTitle">Presióname</h1>
+  <p id="introHint">Hay algo que quiero enseñarte.</p>
+  <button id="startBtn" class="gold-btn">presióname ✦</button>
+</section>
+
+<section id="galaxyScreen" class="screen">
+
+    <canvas id="space"></canvas>
+
+    <div id="galaxyCore"></div>
+
+    <div class="galaxy-copy" id="galaxyCopy">
+
+        <p class="eyebrow">UN PEQUEÑO UNIVERSO</p>
+
+        <h2>
+            En un universo tan grande,<br>
+            <em>tuve la suerte de encontrarte.</em>
+        </h2>
+
+    </div>
+
+    <div class="galaxy-controls">
+        RUEDA · ARRASTRA · EXPLORA
+    </div>
+
+    <button id="moreBtn" class="gold-btn more-btn">
+        hay algo más ✦
+    </button>
+
+</section>
+
+
+<section id="bloomScreen" class="screen">
+    <canvas id="bloomCanvas"></canvas>
+
+    <div class="bloom-message">
+        <p class="eyebrow">Y AQUÍ TERMINA MI PEQUEÑO UNIVERSO</p>
+
+        <h2>
+            TE AMO MUCHO
+            <br>
+            MI ERINA.
+        </h2>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<audio id="music" preload="auto">
+  <source src="assets/mi_yanira.mp3" type="audio/mpeg">
+</audio>
+
+
+<audio id="audioJonathan" preload="auto">
+    <source src="assets/jonathan.mp3" type="audio/mpeg">
+</audio>
+</main>
+<script src="index.js"></script>
+</body>
+</html>

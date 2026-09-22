@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s);
-const PASSWORD = "yanira";
+const PASSWORD = "CERATIZ91";
 
 const passwordScreen = $('#passwordScreen');
 const passwordInput = $('#passwordInput');
